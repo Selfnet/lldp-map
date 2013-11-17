@@ -1,0 +1,6 @@
+lldp-map
+========
+
+Uses SNMP to read out LLDP neighbors and creates a map of them.
+Doesn't take any parameters yet, you need to edit the source.
+It's my first time writing Perl, please be gentle...
