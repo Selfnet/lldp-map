@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selfnet Network Graph</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="vivagraph.js"></script>
+        <script type="text/javascript" src="graph.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <style type="text/css" media="screen">
+            html, body, svg, #graph {
+                font-family: sans;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background: black;
+            }
+            #info {
+                padding: 10px;
+                padding-left: 18px;
+                height: 100%;
+                float: left;
+                background: transparent;
+                color: gray;
+                position: absolute;
+            }
+            #info h3 {
+                color: #ccc;
+            }
+            #info p {
+                margin: 4px;
+                padding: 0;
+            }
+            #info > ul {
+                list-style-position:inside;
+                margin: 4px;
+                padding: 0;
+                list-style: none;
+            }
+            #info ul li:before {
+               content: "•";
+               font-size: 55%; /* or whatever */
+               padding-right: 5px;
+            }
+        </style>
+    </head>
+    <body onload='main()'>
+        <div id="graph"></div>
+        <div id="info"></div>
+    </body>
+</html>
