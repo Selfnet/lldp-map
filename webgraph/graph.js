@@ -395,9 +395,18 @@ function main() {
         nodeUI.attr('transform', 'translate(' + (pos.x - node_size) + ',' + (pos.y - node_size) + ')');
     });
 
+    var layout = Viva.Graph.Layout.forceDirected(graph, {
+        springLength : 10,
+        springCoeff : 0.0001,
+        dragCoeff : 0.02,
+        gravity : -1.2,
+        theta: 0.01
+    });
+
     var renderer = Viva.Graph.View.renderer(graph,
     {
         graphics : graphics,
+        layout: layout,
         container: document.getElementById('graph')
     });
     console.log("Rendering now.");
